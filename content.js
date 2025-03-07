@@ -36,7 +36,7 @@ async function addTranscriptToClipboard() {
         .map((line) => line.innerText.trim()) // Keep timestamps
         .join("\n");
 
-      let finalText = `Summarize this YouTube transcript based on its content and title. First, provide a short paragraph that directly answers or spoils the video's reveal. Then, list 5-10 bullet points summarizing key points from the video with timestamps. Keep the summary clear, concise, and to the point. :\n\nTitle: ${videoTitle}.\n Transcript:\n ${transcriptText} `;
+      let finalText = `Title: ${videoTitle}.\n Transcript:\n ${transcriptText} `;
 
       if (transcriptText) {
         await navigator.clipboard.writeText(finalText);
