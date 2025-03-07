@@ -37,6 +37,11 @@ The extension requires the following permissions:
 - `activeTab` and `tabs`: To interact with the currently active tab and open new tabs.
 - `storage`: To store and retrieve data in the extension's local storage.
 
+## Zip up the project
+```sh
+zip youtube-ai-summary-addon.zip *.js document*.png *.json
+```
+
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any changes or improvements.
